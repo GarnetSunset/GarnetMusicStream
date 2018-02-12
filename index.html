@@ -1,18 +1,19 @@
+ <?php
+  $bg = array('https://cdn.dribbble.com/users/200656/screenshots/3072979/sunset-drive.gif', 'https://thumbs.gfycat.com/HilariousVelvetyArcherfish-size_restricted.gif', 'https://i.redd.it/izptoyn7i4uz.gif', 'http://wallur.com/wp-content/uploads/2016/12/synthwave-background-5.jpg' ); // array of filenames
+
+  $i = rand(0, count($bg)-1); // generate random number size of the array
+  $selectedBg = "$bg[$i]"; // set variable equal to which random filename was chosen
+?>
 <!DOCTYPE html>
 <html>
- <script type="text/javascript">
-
-  var images = ['https://cdn.dribbble.com/users/200656/screenshots/3072979/sunset-drive.gif', 'https://thumbs.gfycat.com/HilariousVelvetyArcherfish-size_restricted.gif', 'https://i.redd.it/izptoyn7i4uz.gif', 'http://wallur.com/wp-content/uploads/2016/12/synthwave-background-5.jpg'];
-  document.getElementsByClassName('mainview')[0].style.backgroundImage = 'url(' + images[Math.round(Math.random() * images.length)] + ')';
-
-</script>
 <head>
   <title>Garnet's Music</title>
-  <style>
-  body {
-    background-image: url(images);
-background-size: cover;
+  <style type="text/css">
+<!--
+body{
+background: url(images/<?php echo $selectedBg; ?>) no-repeat;
 }
+-->
 </style>
  </head>
 
