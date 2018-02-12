@@ -4,16 +4,29 @@
   <title>Garnet's Music</title>
   <style>
   body {
-    background-image: url('https://cdn.dribbble.com/users/200656/screenshots/3072979/sunset-drive.gif');
+    background-image: url('pickimg2');
 background-size: cover;
 }
 </style>
  </head>
 
 <body>
+  <script>
+function pickimg2() {
+    var imagenumber = 2;
+    var randomnumber = Math.random();
+    var rand1 = Math.round( (imagenumber-1) * randomnumber) + 1;
+    images = new Array;
+    images[0] = "https://cdn.dribbble.com/users/200656/screenshots/3072979/sunset-drive.gif";
+    images[1] = "https://thumbs.gfycat.com/HilariousVelvetyArcherfish-size_restricted.gif";
+    images[2] = "https://i.redd.it/izptoyn7i4uz.gif";
+    var image = images[rand1];
+    document.randimg.src = image;
+}
+</script>
 <!-- SCM Music Player http://scmplayer.co -->
 <script type="text/javascript" src="https://scmplayer.co/script.js" 
-data-config="{'skin':'skins/black/skin.css','volume':50,'autoplay':true,'shuffle':true,'repeat':1,'placement':'bottom','showplaylist':true,'playlist':[{'title':'Crowd','url':'http://www.sample-videos.com/audio/mp3/crowd-cheering.mp3'}]}" ></script>
+data-config="{'skin':'skins/black/skin.css','volume':50,'autoplay':true,'shuffle':true,'repeat':1,'placement':'bottom','showplaylist':true,'playlist':[{'title':'Crowd','url':'http://www.sample-videos.com/audio/mp3/crowd-cheering.mp3'},{'title':'fuck','url':'dddd'}]}" ></script>
 <!-- SCM Music Player script end -->
   </body>
   </html>
